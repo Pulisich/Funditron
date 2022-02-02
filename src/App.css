@@ -101,3 +101,21 @@
   height: auto;
   
 }
+.Nav{
+  display: flex;
+  flex-direction: column;
+  flex-flow: row;
+  justify-content: space-between;
+
+}
+.Nav button{
+  background-color: #F34E4E;
+  color: wheat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 150%;
+  padding: 1%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 5%;
+  border-style: none;
+}
