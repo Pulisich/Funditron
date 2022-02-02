@@ -121,3 +121,12 @@
   border-radius: 5%;
   border-style: none;
 }
+
+.homeParagraph{
+  background-color: #FC7777;
+  width: 85%;
+  margin-left: 5%;
+  font-size: x-large;
+  color: wheat;
+  padding: 5%;
+}
