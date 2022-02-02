@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Swal from 'sweetalert2'
+import Header from "../Header/header";
+import NavBarSpa from "../NavBar/nabVarSpa";
 
 
 
@@ -60,10 +62,18 @@ function Funditron() {
     }
 
     return (
+    <div>
+         <Header/>
+        <NavBarSpa/>
         <div className="Funditron">
-            <button onClick={executeFunditron}>EJECUTAR</button>
+           
+            <p> Una vez que hagas click en ejecutar el Funditrón irá realentizando tu computadora poco a poco. <br/>
+            A mayor capacidad de memoria más tiempor le llevará realentizar la computadora al punto de tener que forzar el apagado. </p>
+
+            <button onClick={executeFunditron}><h1>EJECUTAR</h1></button>
 
         </div>
+     </div>   
     ) //OJO QUE FUNCIONA Y ES MUY RÁPIDO
 }
 

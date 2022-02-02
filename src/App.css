@@ -79,14 +79,18 @@
 .Funditron{
   width: 75%;
   height: auto;
-  margin-left: 12%;
+  margin-top: 2%;
+  margin-left: 10%;
   background-color: #FC7777;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #282c34;
+  color: wheat;
+  font-size: x-large;
+  padding: 2%;
 }
 
 .Funditron button{
   background-color: #6DFF55;
+  color: #282c34;
 }
 
 .Footer{
@@ -125,8 +129,16 @@
 .homeParagraph{
   background-color: #FC7777;
   width: 85%;
-  margin-left: 5%;
+  margin-left: 2.5%;
   font-size: x-large;
   color: wheat;
   padding: 5%;
+}
+
+.homeParagraph button{
+  background-color: #F40D0D;
+  border-style: none;
+  width: 20%;
+  height: auto;
+  font-size: 1em;
 }

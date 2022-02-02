@@ -1,5 +1,7 @@
 import React from "react";
+import Funditron from "../Funditron/funditron";
 import Header from "../Header/header";
+import { Link } from "react-router-dom";
 import NavBarSpa from "../NavBar/nabVarSpa";
 
 
@@ -20,8 +22,10 @@ function HomeSpa() {
                 <br/>
                 ¡ATENCIÓN! : El creador no será responsable por cualquier consecuencia producto del uso de su aplicación.
             </p>
+
+            <button> <Link to="/funditron" element={<Funditron/>}>¡VAMOS!</Link> </button>
             </div>
-            <button> ¡VAMOS! </button>
+           
         </div>
     )
 }
