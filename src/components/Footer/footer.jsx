@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer (){
     return(
-        <footer>Developed by <a>PULISICH</a></footer>
+        <footer className="Footer">Developed by <a href="https://github.com/Pulisich?tab=repositories" target="_blank" rel="noreferrer">PULISICH</a></footer>
     )
 }
 

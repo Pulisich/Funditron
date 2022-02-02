@@ -36,3 +36,68 @@
     transform: rotate(360deg);
   }
 }
+
+.Header{
+  background-color: #F34E4E;
+  color:wheat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  margin-top: -1%;
+  margin-left: 1.5%;
+  width: 95%;
+  padding: 1%;
+  height: auto;
+}
+
+.Languages{
+  width: 75%;
+  height: auto;
+  margin-left: 12%;
+  background-color: #ECEAEA;
+  display: flex;
+  flex-direction: row;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: space-between;
+  
+}
+
+.Languages button{
+  background-color: #F34E4E;
+  color: wheat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 150%;
+  padding: 1%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 5%;
+  border-style: none;
+  
+}
+
+.Funditron{
+  width: 75%;
+  height: auto;
+  margin-left: 12%;
+  background-color: #FC7777;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #282c34;
+}
+
+.Funditron button{
+  background-color: #6DFF55;
+}
+
+.Footer{
+  background-color: #F34E4E;
+  color:wheat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  margin-top: 1%;
+  margin-left: 15%;
+  width: 65%;
+  padding: 1%;
+  height: auto;
+  
+}
