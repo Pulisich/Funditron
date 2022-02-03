@@ -63,8 +63,10 @@ function Funditron() {
 
     return (
     <div>
-         <Header/>
+        
+        <Header/>
         <NavBarSpa/>
+        
         <div className="Funditron">
            
             <p> Una vez que hagas click en ejecutar el Funditrón irá realentizando tu computadora poco a poco. <br/>
@@ -73,6 +75,7 @@ function Funditron() {
             <button onClick={executeFunditron}><h1>EJECUTAR</h1></button>
 
         </div>
+     
      </div>   
     ) //OJO QUE FUNCIONA Y ES MUY RÁPIDO
 }

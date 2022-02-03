@@ -40,8 +40,8 @@
 .Header{
   background-color: #F34E4E;
   color:wheat;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: medium;
+  font-family: 'Ubuntu', sans-serif;
   margin-top: -1%;
   margin-left: 1.5%;
   width: 95%;
@@ -50,6 +50,7 @@
 }
 
 .Languages{
+  margin-top: 10%;
   width: 75%;
   height: auto;
   margin-left: 12%;
@@ -63,18 +64,99 @@
   
 }
 
-.Languages button{
-  background-color: #F34E4E;
-  color: wheat;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 150%;
-  padding: 1%;
+/* From cssbuttons.io */
+.languageButton {
   margin-top: 5%;
-  margin-bottom: 5%;
-  border-radius: 5%;
-  border-style: none;
-  
-}
+  margin-bottom: 2%;
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+ }
+ 
+ .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ .edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+     to left,
+     hsl(340deg 100% 16%) 0%,
+     hsl(340deg 100% 32%) 8%,
+     hsl(340deg 100% 32%) 92%,
+     hsl(340deg 100% 16%) 100%
+   );
+ }
+ 
+ .front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ .languageButton:hover {
+  filter: brightness(110%);
+ }
+ 
+ .languageButton:hover .front {
+  transform: translateY(-6px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .languageButton:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+ }
+ 
+ .languageButton:hover .shadow {
+  transform: translateY(4px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .languageButton:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+ }
+ 
+ .languageButton:focus:not(:focus-visible) {
+  outline: none;
+ }
+
 
 .Funditron{
   width: 75%;
@@ -89,10 +171,43 @@
 }
 
 .Funditron button{
-  background-color: #6DFF55;
-  color: #282c34;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0.8em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
 }
 
+.Funditron button::before{
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .9s ease;
+  display: block;
+  z-index: -1;
+ 
+}
+
+.Funditron button:hover::before{
+  width: 105%;
+}
+.Funditron button:hover{
+   color: #111;
+  
+}
 .Footer{
   background-color: #F34E4E;
   color:wheat;
@@ -114,31 +229,198 @@
   justify-content: space-evenly;
 
 }
-.Nav button{
-  background-color: #F34E4E;
-  color: wheat;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 150%;
-  padding: 1%;
+
+
+/* From cssbuttons.io by @namecho */
+.NavButton,
+.NavButton::after {
   margin-top: 2%;
   margin-bottom: 2%;
   border-radius: 5%;
-  border-style: none;
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px wheat;
+ outline: transparent;
+ position: relative;
 }
+
+.NavButton::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "NO! DON'T DO IT!";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+.NavButton:hover::after {
+ animation: .5s glitch;
+ animation-timing-function: steps(1, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
 
 .homeParagraph{
   background-color: #FC7777;
   width: 85%;
   margin-left: 2.5%;
   font-size: x-large;
-  color: wheat;
+  color: rgb(250, 216, 154);
   padding: 5%;
+  
 }
 
 .homeParagraph button{
-  background-color: #F40D0D;
+  background-color: none;
   border-style: none;
   width: 20%;
   height: auto;
   font-size: 1em;
 }
+
+a{
+  text-decoration: none;
+  color: wheat;
+
+}
+
+a :visited{
+  text-decoration: none;
+  color: wheat;
+}
+
+.faqParagraph{
+  width: 75%;
+  background-color: wheat;
+  margin-left: 12%;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  padding: 2%;
+}
+
+
+ 
+ 
+ 
+ .gitProfile{
+
+ /* From cssbuttons.io */
+  --glow-color: rgb(142, 130, 245);
+  --glow-spread-color: #FC7777;
+  --enhanced-glow-color: rgb(31, 128, 219);
+  --btn-color: rgb(100, 61, 136);
+  border: .25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+ }
+ 
+ .gitProfile::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+ }
+ 
+ .gitProfile:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 2em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+ }
+ 
+ .gitProfile:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+         0 0 2.5em 2em var(--glow-spread-color),
+         inset 0 0 .5em .25em var(--glow-color);
+ }
