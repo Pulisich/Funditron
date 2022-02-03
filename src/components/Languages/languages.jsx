@@ -25,11 +25,13 @@ function LanguageSelector() {
                 </button>
             </Link>
 
-            <button className="languageButton">
-                <span className="shadow"></span>
-                <span className="edge"></span>
-                <span className="front text">Portuguese</span>
-            </button>
+            <Link to="/home-spa" element={<HomeSpa />}>
+                <button className="languageButton">
+                    <span className="shadow"></span>
+                    <span className="edge"></span>
+                    <span className="front text">Portugueis (todavia nao)</span>
+                </button>
+            </Link>
 
 
         </div>
