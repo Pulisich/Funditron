@@ -16,7 +16,7 @@ function HomeEng(){
                 DISCLAIMER: The creator will not be responsible for any misuse of this application and will not be held accountable for any of its consequences.
             </p>
 
-            <button className="NavButton"> <Link to="/funditron" element={<FunditronEng />}>LET'S GO!</Link> </button>     
+            <button className="NavButton"> <Link to="/funditron-en" element={<FunditronEng />}>LET'S GO!</Link> </button>     
                
         </div>
         </div>
