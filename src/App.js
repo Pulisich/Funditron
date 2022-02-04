@@ -8,14 +8,15 @@ import FaqSpa from './components/FAQ/faqSpa';
 import HomeEng from './components/Homes/homeEng';
 import FunditronEng from './components/Funditron/funditronEng';
 import FaqEng from './components/FAQ/faqEng';
+import { ContextProvider } from './context/appContext';
 function App() {
 
-  //Crear un context que me permita no tener que renderizar el navbar
+  //Crear un context que me permita no tener que renderizar el navbar ni el contenido cada vez que se seleccione un idioma
   //Con el context lo que puedo hacer es que se seleccione un idioma, y cuando ese idioma se seleccione se renderice el código de los componentes acorde a ese idioma.
   return (
     <div className="App">
       
-
+      <ContextProvider>
       <BrowserRouter>
         <Routes>
           
@@ -34,7 +35,7 @@ function App() {
         </Routes>
           <Footer />
       </BrowserRouter>
-
+      </ContextProvider>
     </div>
   );
 }
