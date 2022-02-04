@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import FaqEng from "../../FAQ/faqEng";
+import FaqEng from "../FAQ/faqEng";
 import FunditronEng from "../Funditron/funditronEng";
 import HomeEng from "../Homes/homeEng";
 import LanguageSelector from "../Languages/languages";

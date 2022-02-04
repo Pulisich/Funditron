@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import FaqSpa from "../../FAQ/faqSpa";
+import FaqSpa from "../FAQ/faqSpa";
 import Funditron from "../Funditron/funditron";
 import HomeSpa from "../Homes/homeSpa";
 import LanguageSelector from "../Languages/languages";

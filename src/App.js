@@ -4,11 +4,14 @@ import LanguageSelector from './components/Languages/languages';
 import { BrowserRouter,  Route, Routes } from 'react-router-dom'
 import HomeSpa from './components/Homes/homeSpa';
 import Funditron from './components/Funditron/funditron';
-import FaqSpa from './FAQ/faqSpa';
+import FaqSpa from './components/FAQ/faqSpa';
 import HomeEng from './components/Homes/homeEng';
 import FunditronEng from './components/Funditron/funditronEng';
-import FaqEng from './FAQ/faqEng';
+import FaqEng from './components/FAQ/faqEng';
 function App() {
+
+  //Crear un context que me permita no tener que renderizar el navbar
+  //Con el context lo que puedo hacer es que se seleccione un idioma, y cuando ese idioma se seleccione se renderice el código de los componentes acorde a ese idioma.
   return (
     <div className="App">
       

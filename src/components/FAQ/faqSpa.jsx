@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/Header/header";
-import NavBarSpa from "../components/NavBar/nabVarSpa";
+import Header from "../Header/header";
+import NavBarSpa from "../NavBar/nabVarSpa";
 function FaqSpa() {
 
     return (

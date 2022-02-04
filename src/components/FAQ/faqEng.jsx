@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/Header/header";
-import NavBarEn from "../components/NavBar/nabVarEn";
+import Header from "../Header/header";
+import NavBarEn from "../NavBar/nabVarEn";
 function FaqEng() {
 
     return (
