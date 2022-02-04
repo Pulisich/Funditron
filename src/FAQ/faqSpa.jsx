@@ -24,10 +24,6 @@ function FaqSpa() {
                 Bueno siempre de chico jugaba al científico loco, me gustaban los robots y esas cosas y en realidad es simplemente una forma muy larga de decir estaba aburrido y tenía que practicar.
                 </p>
 
-                <h3>¿Por qué se ve feo?</h3>
-                <p>
-                    Porque no soy diseñador, soy programador, me gusta programar, quiero trabajar programando, no diseño cosas, programo cosas.
-                </p>
 
                 <h3>¿Se puede usar en celulares?</h3>
                 <p>

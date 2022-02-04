@@ -24,10 +24,6 @@ function FaqEng() {
                 As a kid I was very fond of robots, software, and science fiction, and I always enjoyed playing mad scientist, and all of this is just a long and over complicated way of saying: I was bored and I needed to practice.
                 </p>
 
-                <h3>Why does it looks so ugly?</h3>
-                <p>
-                    Mainly because I am not a designer, I am a programmer, I like to code, I want to work as a programmer, I do not design things, I program things.
-                </p>
 
                 <h3>Can it be used on cellphones?</h3>
                 <p>
